@@ -27,11 +27,13 @@ public class Consumer {
             System.out.println(new String(message.getBody()));
         };
         // 取消消息时的回调
+        //取消消费的一个回调接口 如在消费的时候队列被删除掉了
         CancelCallback cancelCallback = (consumerTage) -> {
             System.out.println("消息消费被中断");
         };
 
 
+        //消息的接收
         /**
          * 消费者消费队列
          * 1.消费哪个队列
