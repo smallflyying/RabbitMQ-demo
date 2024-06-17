@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2279bb90-30e7-4bb2-8d1a-d5c7e369e77c" name="Changes" comment="死信队列：&#10;1、设置TTL时间&#10;2、设置正常队列的长度的限制&#10;3、消息被拒绝(basic.reject 或 basic.nack)并且 requeue=false">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-rabbitmq/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-rabbitmq/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-rabbitmq/src/main/java/com/atguigu/springbootrabbitmq/SpringbootRabbitmqApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-rabbitmq/src/main/java/com/atguigu/springbootrabbitmq/config/SwaggerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-rabbitmq/src/main/java/com/atguigu/springbootrabbitmq/config/TtlQueueConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-rabbitmq/src/main/java/com/atguigu/springbootrabbitmq/consumer/DeadLetterQueueConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-rabbitmq/src/main/java/com/atguigu/springbootrabbitmq/controller/SendMsgController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-rabbitmq/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-rabbitmq/src/test/java/com/atguigu/springbootrabbitmq/SpringbootRabbitmqApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbitmq-demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq-demo.iml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/springboot-rabbitmq" />
+    <option name="ROOT_SYNC" value="SYNC" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;smallflyying&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:smallflyying/RabbitMQ-demo.git&quot;,
+    &quot;accountId&quot;: &quot;0bab6a0f-cbe8-4232-be7e-26e9444cbbcd&quot;
+  }
+}</component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="customMavenHome" value="E:\GoogleDown\softwares\apache-maven-3.9.2-bin\apache-maven-3.9.2" />
+        <option name="localRepository" value="E:\GoogleDown\maven_repository" />
+        <option name="mavenHomeTypeForPersistence" value="CUSTOM" />
+        <option name="userSettingsFile" value="E:\GoogleDown\softwares\apache-maven-3.9.2-bin\apache-maven-3.9.2\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+    <option name="vmOptions" value="-DarchetypeCatalog=internal" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2htaH7xg3pS2A5N4WWmpEqlWfFW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.ConfirmMessage.executor": "Run",
+    "Application.Consumer01.executor": "Run",
+    "Application.Consumer02.executor": "Run",
+    "Application.DirectLogs.executor": "Run",
+    "Application.EmitLog.executor": "Run",
+    "Application.EmitLogTopic.executor": "Run",
+    "Application.Producer.executor": "Run",
+    "Application.ReceiveLogs01.executor": "Run",
+    "Application.ReceiveLogs02.executor": "Run",
+    "Application.ReceiveLogsDirect01.executor": "Run",
+    "Application.ReceiveLogsDirect02.executor": "Run",
+    "Application.ReceiveLogsTopic01.executor": "Run",
+    "Application.ReceiveLogsTopic02.executor": "Run",
+    "Application.Task2.executor": "Run",
+    "Application.Work03.executor": "Run",
+    "Application.Work04.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.SpringbootRabbitmqApplication.executor": "Run",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "jdk.selected.JAVA_MODULE": "17",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "E:/GoogleDown/maven_repository/io/springfox/springfox-spi/2.9.2/springfox-spi-2.9.2.jar",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2908046",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "spring.configuration.checksum": "8e0cb9e0c938d51ba251702fd6f95d0b",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.atguigu.rabbitmq.eight" />
+      <recent name="com.atguigu.rabbitmq.seven" />
+      <recent name="com.atguigu.rabbitmq.six" />
+      <recent name="com.atguigu.rabbitmq.five" />
+      <recent name="com.atguigu.rabbitmq.three" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.SpringbootRabbitmqApplication">
+    <configuration name="Consumer01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.rabbitmq.eight.Consumer01" />
+      <module name="rabbitmq-hello" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.rabbitmq.eight.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Consumer02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.rabbitmq.eight.Consumer02" />
+      <module name="rabbitmq-hello" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.rabbitmq.eight.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmitLogTopic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.rabbitmq.seven.EmitLogTopic" />
+      <module name="rabbitmq-hello" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.rabbitmq.seven.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Producer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.rabbitmq.eight.Producer" />
+      <module name="rabbitmq-hello" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.rabbitmq.eight.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReceiveLogsTopic02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.rabbitmq.seven.ReceiveLogsTopic02" />
+      <module name="rabbitmq-hello" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.rabbitmq.seven.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootRabbitmqApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springboot-rabbitmq" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.atguigu.springbootrabbitmq.SpringbootRabbitmqApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17890.1" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.17890.1" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2279bb90-30e7-4bb2-8d1a-d5c7e369e77c" name="Changes" comment="" />
+      <created>1718415738193</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1718415738193</updated>
+      <workItem from="1718415739819" duration="15417000" />
+      <workItem from="1718452705608" duration="102000" />
+      <workItem from="1718452825194" duration="6817000" />
+      <workItem from="1718504911842" duration="5994000" />
+      <workItem from="1718521569000" duration="23000" />
+      <workItem from="1718521611995" duration="102000" />
+      <workItem from="1718521908579" duration="6762000" />
+      <workItem from="1718539375111" duration="16000" />
+      <workItem from="1718539415994" duration="3099000" />
+      <workItem from="1718547619676" duration="58000" />
+      <workItem from="1718547684140" duration="73000" />
+      <workItem from="1718548528737" duration="20000" />
+      <workItem from="1718549084015" duration="416000" />
+      <workItem from="1718549516287" duration="32000" />
+      <workItem from="1718549562783" duration="130000" />
+      <workItem from="1718549749455" duration="58000" />
+      <workItem from="1718549820745" duration="362000" />
+      <workItem from="1718550200522" duration="96000" />
+      <workItem from="1718628547583" duration="719000" />
+      <workItem from="1718629277602" duration="255000" />
+      <workItem from="1718629542502" duration="1897000" />
+      <workItem from="1718631449631" duration="5414000" />
+    </task>
+    <task id="LOCAL-00001" summary="Hello World">
+      <created>1718430208209</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1718430208209</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Work Queues">
+      <created>1718432893661</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1718432893661</updated>
+    </task>
+    <task id="LOCAL-00003" summary="发布确认模式&#10; 1、单个确认&#10; 2、批量确认&#10; 3、异步批量确认">
+      <option name="closed" value="true" />
+      <created>1718461431712</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1718461431712</updated>
+    </task>
+    <task id="LOCAL-00004" summary="交换机：&#10;1、Fanout&#10;2、Direct exchange&#10;3、Topics">
+      <option name="closed" value="true" />
+      <created>1718510798768</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1718510798768</updated>
+    </task>
+    <task id="LOCAL-00005" summary="死信队列：&#10;1、设置TTL时间&#10;2、设置正常队列的长度的限制&#10;3、消息被拒绝(basic.reject 或 basic.nack)并且 requeue=false">
+      <option name="closed" value="true" />
+      <created>1718531264754</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1718531264754</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Hello World" />
+    <MESSAGE value="Work Queues" />
+    <MESSAGE value="发布确认模式&#10; 1、单个确认&#10; 2、批量确认&#10; 3、异步批量确认" />
+    <MESSAGE value="交换机：&#10;1、Fanout&#10;2、Direct exchange&#10;3、Topics" />
+    <MESSAGE value="死信队列：&#10;1、设置TTL时间&#10;2、设置正常队列的长度的限制&#10;3、消息被拒绝(basic.reject 或 basic.nack)并且 requeue=false" />
+    <option name="LAST_COMMIT_MESSAGE" value="死信队列：&#10;1、设置TTL时间&#10;2、设置正常队列的长度的限制&#10;3、消息被拒绝(basic.reject 或 basic.nack)并且 requeue=false" />
+  </component>
+</project>
