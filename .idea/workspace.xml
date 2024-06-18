@@ -4,22 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2279bb90-30e7-4bb2-8d1a-d5c7e369e77c" name="Changes" comment="死信队列：&#10;1、设置TTL时间&#10;2、设置正常队列的长度的限制&#10;3、消息被拒绝(basic.reject 或 basic.nack)并且 requeue=false">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-rabbitmq/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-rabbitmq/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-rabbitmq/src/main/java/com/atguigu/springbootrabbitmq/SpringbootRabbitmqApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-rabbitmq/src/main/java/com/atguigu/springbootrabbitmq/config/SwaggerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-rabbitmq/src/main/java/com/atguigu/springbootrabbitmq/config/TtlQueueConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-rabbitmq/src/main/java/com/atguigu/springbootrabbitmq/consumer/DeadLetterQueueConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-rabbitmq/src/main/java/com/atguigu/springbootrabbitmq/controller/SendMsgController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-rabbitmq/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-rabbitmq/src/test/java/com/atguigu/springbootrabbitmq/SpringbootRabbitmqApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbitmq-demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq-demo.iml" afterDir="false" />
+    <list default="true" id="2279bb90-30e7-4bb2-8d1a-d5c7e369e77c" name="Changes" comment="延时队列优化">
+      <change afterPath="$PROJECT_DIR$/springboot-rabbitmq/src/main/java/com/atguigu/springbootrabbitmq/config/DelayedQueueConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-rabbitmq/src/main/java/com/atguigu/springbootrabbitmq/consumer/DelayQueueConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-rabbitmq/src/main/java/com/atguigu/springbootrabbitmq/controller/SendMsgController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-rabbitmq/src/main/java/com/atguigu/springbootrabbitmq/controller/SendMsgController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -239,6 +228,10 @@
       <workItem from="1718629277602" duration="255000" />
       <workItem from="1718629542502" duration="1897000" />
       <workItem from="1718631449631" duration="5414000" />
+      <workItem from="1718637546164" duration="110000" />
+      <workItem from="1718714601745" duration="227000" />
+      <workItem from="1718714837621" duration="211000" />
+      <workItem from="1718715056765" duration="4620000" />
     </task>
     <task id="LOCAL-00001" summary="Hello World">
       <created>1718430208209</created>
@@ -278,7 +271,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718531264754</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="延时队列优化">
+      <option name="closed" value="true" />
+      <created>1718637592824</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1718637592824</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -301,6 +302,7 @@
     <MESSAGE value="发布确认模式&#10; 1、单个确认&#10; 2、批量确认&#10; 3、异步批量确认" />
     <MESSAGE value="交换机：&#10;1、Fanout&#10;2、Direct exchange&#10;3、Topics" />
     <MESSAGE value="死信队列：&#10;1、设置TTL时间&#10;2、设置正常队列的长度的限制&#10;3、消息被拒绝(basic.reject 或 basic.nack)并且 requeue=false" />
-    <option name="LAST_COMMIT_MESSAGE" value="死信队列：&#10;1、设置TTL时间&#10;2、设置正常队列的长度的限制&#10;3、消息被拒绝(basic.reject 或 basic.nack)并且 requeue=false" />
+    <MESSAGE value="延时队列优化" />
+    <option name="LAST_COMMIT_MESSAGE" value="延时队列优化" />
   </component>
 </project>
