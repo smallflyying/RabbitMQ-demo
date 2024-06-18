@@ -1,5 +1,6 @@
 package com.atguigu.springbootrabbitmq.controller;
 
+import com.atguigu.springbootrabbitmq.config.DelayedQueueConfig;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -49,5 +50,16 @@ public class SendMsgController {
             return msg;
         });
 
+    }
+    // 开始发消息 基于插件的  消息  及 延迟的时间
+    @GetMapping("sendDelayMsg/{message}/{delayTime}")
+    public void sendMsg(@PathVariable String message,@PathVariable Integer delayTime) {
+        rabbitTemplate.convertAndSend(DelayedQueueConfig.DELAYED_EXCHANGE_NAME, DelayedQueueConfig.DELAYED_ROUTING_KEY, message,
+                correlationData ->{
+                    correlationData.getMessageProperties().setDelay(delayTime);
+                    return correlationData;
+                });
+        log.info(" 当 前 时 间 ： {}, 发送一条延迟 {} 毫秒的信息给队列 delayed.queue:{}", new
+                Date(),delayTime, message);
     }
 }
