@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2279bb90-30e7-4bb2-8d1a-d5c7e369e77c" name="Changes" comment="延时队列优化">
-      <change afterPath="$PROJECT_DIR$/springboot-rabbitmq/src/main/java/com/atguigu/springbootrabbitmq/config/DelayedQueueConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-rabbitmq/src/main/java/com/atguigu/springbootrabbitmq/consumer/DelayQueueConsumer.java" afterDir="false" />
+    <list default="true" id="2279bb90-30e7-4bb2-8d1a-d5c7e369e77c" name="Changes" comment="Rabbitmq 插件实现延迟队列">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-rabbitmq/src/main/java/com/atguigu/springbootrabbitmq/controller/SendMsgController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-rabbitmq/src/main/java/com/atguigu/springbootrabbitmq/controller/SendMsgController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +20,17 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/springboot-rabbitmq" />
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
@@ -32,12 +40,12 @@
     &quot;assignee&quot;: &quot;smallflyying&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;git@github.com:smallflyying/RabbitMQ-demo.git&quot;,
-    &quot;accountId&quot;: &quot;0bab6a0f-cbe8-4232-be7e-26e9444cbbcd&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "git@github.com:smallflyying/RabbitMQ-demo.git",
+    "accountId": "8e125841-2672-424f-b02f-882da6c0f1a6"
   }
-}</component>
+}]]></component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -231,7 +239,7 @@
       <workItem from="1718637546164" duration="110000" />
       <workItem from="1718714601745" duration="227000" />
       <workItem from="1718714837621" duration="211000" />
-      <workItem from="1718715056765" duration="4620000" />
+      <workItem from="1718715056765" duration="5320000" />
     </task>
     <task id="LOCAL-00001" summary="Hello World">
       <created>1718430208209</created>
@@ -279,7 +287,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718637592824</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Rabbitmq 插件实现延迟队列">
+      <option name="closed" value="true" />
+      <created>1718721008505</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1718721008506</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -290,7 +306,14 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ID_WIDTH">
+                <map>
+                  <entry key="Table.Default.Author.ColumnIdWidth" value="60" />
+                  <entry key="Table.GitHub.CommitStatus.ColumnIdWidth" value="45" />
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -303,6 +326,7 @@
     <MESSAGE value="交换机：&#10;1、Fanout&#10;2、Direct exchange&#10;3、Topics" />
     <MESSAGE value="死信队列：&#10;1、设置TTL时间&#10;2、设置正常队列的长度的限制&#10;3、消息被拒绝(basic.reject 或 basic.nack)并且 requeue=false" />
     <MESSAGE value="延时队列优化" />
-    <option name="LAST_COMMIT_MESSAGE" value="延时队列优化" />
+    <MESSAGE value="Rabbitmq 插件实现延迟队列" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rabbitmq 插件实现延迟队列" />
   </component>
 </project>
