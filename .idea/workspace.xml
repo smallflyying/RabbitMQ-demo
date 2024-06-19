@@ -5,7 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2279bb90-30e7-4bb2-8d1a-d5c7e369e77c" name="Changes" comment="Rabbitmq 插件实现延迟队列">
+      <change afterPath="$PROJECT_DIR$/springboot-rabbitmq/src/main/java/com/atguigu/springbootrabbitmq/config/ConfirmConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-rabbitmq/src/main/java/com/atguigu/springbootrabbitmq/config/MyCallBack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-rabbitmq/src/main/java/com/atguigu/springbootrabbitmq/consumer/Consumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-rabbitmq/src/main/java/com/atguigu/springbootrabbitmq/consumer/WarningConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-rabbitmq/src/main/java/com/atguigu/springbootrabbitmq/controller/ProducerController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbitmq-hello/src/main/java/com/atguigu/rabbitmq/one/Producer.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq-hello/src/main/java/com/atguigu/rabbitmq/one/Producer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-rabbitmq/src/main/java/com/atguigu/springbootrabbitmq/controller/SendMsgController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-rabbitmq/src/main/java/com/atguigu/springbootrabbitmq/controller/SendMsgController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-rabbitmq/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-rabbitmq/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +39,7 @@
         <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/springboot-rabbitmq" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -40,12 +48,12 @@
     &quot;assignee&quot;: &quot;smallflyying&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "git@github.com:smallflyying/RabbitMQ-demo.git",
-    "accountId": "8e125841-2672-424f-b02f-882da6c0f1a6"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:smallflyying/RabbitMQ-demo.git&quot;,
+    &quot;accountId&quot;: &quot;8e125841-2672-424f-b02f-882da6c0f1a6&quot;
   }
-}]]></component>
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -98,7 +106,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Spring Boot.SpringbootRabbitmqApplication.executor": "Run",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "#1 on master-2",
     "jdk.selected.JAVA_MODULE": "17",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "E:/GoogleDown/maven_repository/io/springfox/springfox-spi/2.9.2/springfox-spi-2.9.2.jar",
@@ -124,26 +132,13 @@
       <recent name="com.atguigu.rabbitmq.three" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.SpringbootRabbitmqApplication">
-    <configuration name="Consumer01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.rabbitmq.eight.Consumer01" />
+  <component name="RunManager" selected="Application.Consumer">
+    <configuration name="Consumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.rabbitmq.one.Consumer" />
       <module name="rabbitmq-hello" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.atguigu.rabbitmq.eight.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Consumer02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.rabbitmq.eight.Consumer02" />
-      <module name="rabbitmq-hello" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.atguigu.rabbitmq.eight.*" />
+          <option name="PATTERN" value="com.atguigu.rabbitmq.one.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -190,6 +185,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="com.atguigu.rabbitmq.one.Producer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.rabbitmq.one.Producer" />
+      <module name="rabbitmq-hello" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.rabbitmq.one.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SpringbootRabbitmqApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="springboot-rabbitmq" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.atguigu.springbootrabbitmq.SpringbootRabbitmqApplication" />
@@ -197,6 +205,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Consumer" />
+        <item itemvalue="Application.com.atguigu.rabbitmq.one.Producer" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -239,7 +253,10 @@
       <workItem from="1718637546164" duration="110000" />
       <workItem from="1718714601745" duration="227000" />
       <workItem from="1718714837621" duration="211000" />
-      <workItem from="1718715056765" duration="5320000" />
+      <workItem from="1718715056765" duration="7606000" />
+      <workItem from="1718800038981" duration="1302000" />
+      <workItem from="1718802600761" duration="106000" />
+      <workItem from="1718802719736" duration="6618000" />
     </task>
     <task id="LOCAL-00001" summary="Hello World">
       <created>1718430208209</created>
@@ -295,7 +312,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718721008506</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Rabbitmq 插件实现延迟队列">
+      <option name="closed" value="true" />
+      <created>1718721897995</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1718721897995</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
