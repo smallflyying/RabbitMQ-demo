@@ -5,10 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2279bb90-30e7-4bb2-8d1a-d5c7e369e77c" name="Changes" comment="延时队列优化">
-      <change afterPath="$PROJECT_DIR$/springboot-rabbitmq/src/main/java/com/atguigu/springbootrabbitmq/config/DelayedQueueConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-rabbitmq/src/main/java/com/atguigu/springbootrabbitmq/consumer/DelayQueueConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/rabbitmq/eight/Consumer01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/rabbitmq/eight/Consumer02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/rabbitmq/eight/Producer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/rabbitmq/five/EmitLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/rabbitmq/five/ReceiveLogs01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/rabbitmq/five/ReceiveLogs02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/rabbitmq/four/ConfirmMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/rabbitmq/one/Consumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/rabbitmq/one/Producer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/rabbitmq/seven/EmitLogTopic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/rabbitmq/seven/ReceiveLogsTopic01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/rabbitmq/seven/ReceiveLogsTopic02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/rabbitmq/six/DirectLogs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/rabbitmq/six/ReceiveLogsDirect01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/rabbitmq/six/ReceiveLogsDirect02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/rabbitmq/three/Task2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/rabbitmq/three/Work03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/rabbitmq/three/Work04.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/rabbitmq/two/Task01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/rabbitmq/two/Work01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/rabbitmq/two/Work02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/rabbitmq/utils/RabbitMqUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/rabbitmq/utils/SleepUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-rabbitmq/src/main/java/com/atguigu/springbootrabbitmq/controller/SendMsgController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-rabbitmq/src/main/java/com/atguigu/springbootrabbitmq/controller/SendMsgController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +46,12 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/springboot-rabbitmq" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -32,12 +60,12 @@
     &quot;assignee&quot;: &quot;smallflyying&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;git@github.com:smallflyying/RabbitMQ-demo.git&quot;,
-    &quot;accountId&quot;: &quot;0bab6a0f-cbe8-4232-be7e-26e9444cbbcd&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "git@github.com:smallflyying/RabbitMQ-demo.git",
+    "accountId": "8e125841-2672-424f-b02f-882da6c0f1a6"
   }
-}</component>
+}]]></component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -93,7 +121,7 @@
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "17",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/GoogleDown/maven_repository/io/springfox/springfox-spi/2.9.2/springfox-spi-2.9.2.jar",
+    "last_opened_file_path": "E:/Entertainments/Code/rabbitmq/RabbitMQ-demo/src/main/java",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -102,12 +130,15 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2908046",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "MavenSettings",
     "spring.configuration.checksum": "8e0cb9e0c938d51ba251702fd6f95d0b",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Entertainments\Code\rabbitmq\RabbitMQ-demo\src\main\java" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.atguigu.rabbitmq.eight" />
       <recent name="com.atguigu.rabbitmq.seven" />
@@ -232,6 +263,7 @@
       <workItem from="1718714601745" duration="227000" />
       <workItem from="1718714837621" duration="211000" />
       <workItem from="1718715056765" duration="4620000" />
+      <workItem from="1718888704422" duration="3210000" />
     </task>
     <task id="LOCAL-00001" summary="Hello World">
       <created>1718430208209</created>
